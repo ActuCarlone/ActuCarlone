@@ -155,7 +155,7 @@ nav {
     top: 100%;
     left: 0;
     background-color: #1B91BF;
-    min-width: 200px;
+    min-width: 100px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     opacity: 0;
