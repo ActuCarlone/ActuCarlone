@@ -21,7 +21,13 @@
     background-size: 100% 600px;
 padding-top: 10px;
 }
-
+h2{
+     font-family: "FuturaBold";
+     color:white;
+     text-align: center;
+     margin-top: 110px;
+    font-size: 54px;
+}
 /* Header - RETIRÉ le margin-right: 80px */
 header {
     background-color: #1B91BF;
@@ -126,6 +132,7 @@ nav {
 
 .nav-item {
     position: relative;
+    display: flex;
 }
 
 .nav-item > a {
