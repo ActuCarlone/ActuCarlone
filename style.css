@@ -644,3 +644,53 @@ h4 {
     font-family: "FuturaBold";
     padding: 15px;
 }
+
+#dossier-epreuve{
+    height: 1300px;
+    background-color: aliceblue;
+}
+
+#dossier-epreuve p{
+    font-family: "Calibri";
+}
+#dossier-epreuve h4{
+      text-align: center;
+    font-family: "FuturaBold";
+    color: #F1B63F;
+}
+
+#dossier-epreuve h3 {
+    border-top: 10px solid aliceblue;
+    background-color: #F1B63F;
+    color: aliceblue;
+    text-align: end;
+    font-family: "FuturaBold";
+    height: 50px;
+}
+
+.accroche2{
+    margin-top: 20px;
+}
+.accroche2 h5{
+    font-size: large;
+}
+
+.colonne1{
+width: 387px;
+    text-align: justify;
+    justify-self: center;
+}
+.colonne1 p{
+    font-size: larger;
+}
+
+.colonne2 img{
+    width:320px;
+}
+
+.colonnes{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
