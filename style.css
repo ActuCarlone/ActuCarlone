@@ -1,30 +1,717 @@
-:root{
-  --blue:#1d97c6;
-  --title:#1b8fbe;
-  --text:#1c1c1c;
-  --muted:#3f3f3f;
-
-  /* Page type A4 écran */
-  --page-w: 1000px;
-  --page-h: 1320px;
-
-  --pad-x: 62px;
-  --pad-top: 44px;
-
-  --band-h: 56px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-*{ box-sizing:border-box; margin:0; padding:0; }
-
-body{
-  font-family: "Inter", Arial, sans-serif;
-  background:#eef2f5;
-  padding:20px;
-  display:flex;
-  justify-content:center;
+@font-face {
+    font-family: "FuturaBold";
+    src: url("Futura_Bold.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* conteneur multi-pages (empile proprement) */
+
+.accueil {
+    width: 100%;
+    height: 840px;
+    background-color: #1B91BF;
+    background-image: url('images/sophia.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+    padding-top: 10px;
+}
+
+h2 {
+    font-family: "FuturaBold";
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 54px;
+}
+
+/* Header - RETIRÉ le margin-right: 80px */
+header {
+    background-color: #1B91BF;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -11px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: baseline;
+}
+
+.actu {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    font-style: italic;
+    font-family: "Calibri", sans-serif;
+    font-size: 60px;
+    margin-right: 15px;
+}
+
+.Carlone {
+    color: white;
+    font-family: "FuturaBold", sans-serif;
+    font-size: 60px;
+}
+
+h1 {
+    margin-left: 30px;
+    font-size: 60px;
+}
+
+.h1 {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    gap: 17px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Calibri", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+nav {
+    display: flex;
+    gap: 17px;
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+}
+
+.nav-item>a {
+    color: white;
+    text-decoration: none;
+    font-family: "Calibri", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.nav-item>a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-item>a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Menu déroulant */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: -16px;
+    background-color: #1B91BF;
+    min-width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    margin-top: 5px;
+}
+
+/* Afficher le dropdown au survol */
+.nav-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Liens dans le dropdown */
+.dropdown a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: "Calibri", sans-serif;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown a:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.dropdown a:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+}
+
+
+#edito {
+    background-color: #669eb4;
+    padding-top: 10px;
+    position: relative;
+   
+}
+.cadredito{
+   
+   width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid aliceblue;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#edito p {
+    font-family: "Calibri";
+    color: white;
+    font-style: normal;
+    width: 700px;
+
+}
+.signature {
+    text-align: right;
+    margin-top: 20px;
+}
+.edito {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+
+}
+
+h4 {
+    font-family: "FuturaBold";
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    margin-top: 20px;
+}
+
+@keyframes glisseDroite {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#edito h3 {
+    height: 50px;
+    background-color: aliceblue;
+    border-bottom: #1B91BF solid 5px;
+    border-top: #1B91BF solid 5px;
+    font-family: "FuturaBold";
+    color: #1B91BF;
+    text-align: end;
+
+}
+
+#edito img {
+    width: 150px;
+    height: 200px;
+    border: solid 1px aliceblue;
+    border-radius: 5%;
+    top: 94px;
+    right: 20px;
+    position: absolute;
+}
+
+
+
+@keyframes apparition {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#edito:target h3 {
+    animation: glisseDroite 1s ease-out forwards;
+}
+
+#edito:target img {
+    animation: apparition 1s ease-out forwards;
+}
+
+
+#dossier {
+        height: 1442px;
+
+    background-color: aliceblue;
+    padding-top: 10px;
+    position: relative;
+}
+
+#dossier h3 {
+    font-family: "FuturaBold";
+    font-size: larger;
+    height: 50px;
+    background-color: aliceblue;
+    border-bottom: #F1B63F solid 5px;
+    border-top: #F1B63F solid 5px;
+    font-family: "FuturaBold";
+    color: #F1B63F;
+    text-align: end;
+}
+
+
+#dossier h5{
+      color: #F1B63F;
+    text-align: end;
+    font-family: "FuturaBold";
+    font-size: larger;
+    padding-top: 50px;
+    margin-right: 58px;
+}
+#dossier h4 {
+    color: #F1B63F;
+    text-align: center;
+    font-family: "FuturaBold";
+    font-size: larger;
+    padding-top: 50px;
+
+}
+.breveD {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+.breve1 p {
+    font-family: "Calibri";
+    width: 200px;
+
+    margin-top: 96px;
+     border: solid 2px #36A6BF;
+    border-radius: 20%;
+    padding: 20px;
+  
+}
+
+.breve2 p {
+    font-family: "Calibri";
+    width: 277px;
+    border: solid 2px #45BFBF;
+    border-radius: 20%;
+    padding: 20px;
+
+}
+
+.breve3 p {
+    font-family: "Calibri";
+    width: 233px;
+    margin-top: 96px;
+   border:solid 2px #51A644;
+    border-radius: 20%;
+    padding: 20px;
+
+}
+
+.breve4 p {
+    font-family: "Calibri";
+    width: 305px;
+    border: solid 2px #F1B63F;
+    border-radius: 20%;
+    padding: 20px;
+    
+}
+
+.breveD>div {
+    transition: transform 0.3s ease;
+}
+
+.breveD>div:hover {
+    transform: scale(1.05);
+}
+
+#dossier:target h3 {
+    animation: glisseDroite 1s ease-out forwards;
+}
+#dossier:target h4 {
+    animation: glisseDroite 2s ease-out forwards;
+}
+#dossier:target img {
+    animation: apparition 1s ease-out forwards;
+}
+
+.breveV {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+       margin-top: 131px;
+}
+
+.breve6 p {
+    font-family: "Calibri";
+    width: 240px;
+    border: solid 2px #F25252;
+    border-radius: 20%;
+    padding: 20px;
+   
+}
+
+.breve7 p {
+    font-family: "Calibri";
+    width: 223px;
+    margin-top: 96px;
+    border: solid 2px #f13f83;
+    border-radius: 20%;
+    padding: 20px;
+    
+}
+
+.breve8 p {
+    font-family: "Calibri";
+    width: 280px;
+    border: solid 2px #880c7e;
+    border-radius: 20%;
+    padding: 20px;
+   
+}
+
+.breveV>div {
+    transition: transform 0.3s ease;
+}
+
+.breveV>div:hover {
+    transform: scale(1.05);
+}
+
+.Valentin{
+
+    width: 162px;
+    height: 200px;
+    position: absolute;
+  justify-self: start;
+    display: flex;
+    border-radius: 5%;
+    margin-left: 1000px;
+}
+.Dorian{
+    width: 162px;
+    height: 209px;
+    position: absolute;
+  justify-self: end;
+    display: flex;
+    border-radius: 5%;
+   margin-left: 820px;
+
+
+}
+.photodossier {
+    display: flex;
+    align-items: center;
+    margin-top: 114px;
+
+}
+
+.P-Laffitte {
+    background-image: url(images/pierrelaffite.jpeg);
+    height: 680px;
+}
+
+#dossier-origines {
+
+    height: 1705px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+#dossier-origines h3 {
+    background-color: #F1B63F;
+    color: aliceblue;
+    text-align: end;
+    font-family: "FuturaBold";
+    height: 50px;
+}
+
+#dossier-origines h4 {
+    text-align: center;
+    font-family: "FuturaBold";
+    color: #F1B63F;
+}
+
+#dossier-origines p {
+    font-family: "Calibri";
+}
+
+.origines {
+    text-align: justify;
+    width: 1000px;
+    justify-self: center;
+}
+
+.origines img {
+    width: 1001px;
+    height: 342px;
+    margin-top: 36px;
+}
+
+.OGart h5 {
+    color: black;
+    font-weight: 1000;
+    font-family: "Calibri";
+    text-align: center;
+    font-size: 17px;
+}
+
+.OGcolonne {
+    display: flex;
+    flex-direction: column;
+    width: 832px;
+    text-align: justify;
+    gap: 36px;
+    border-left: #F1B63F solid 4px;
+    border-bottom: #F1B63F solid 4px;
+       padding-left: 57px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.OGart {
+    display: flex;
+    gap: 64px;
+    width: 816px;
+  justify-self: center;
+  padding-top: 180px;
+  
+}
+
+.regle {
+    width: 900px;
+      
+}
+
+.L{
+       position: absolute;
+    border-right: #F1B63F 4px solid;
+    border-top: #F1B63F 4px solid;
+   width: 100px;
+    height: 341px;
+       margin-top: -638px;
+    margin-left: 968px;
+}
+
+
+#dossier-origines:target h4 {
+    animation: glisseDroite 1s ease-out forwards;
+}
+
+.chariot{
+      text-align: end;
+    font-family: "FuturaBold";
+    color: #F1B63F;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.Mathis{
+        width: 130px;
+    border-radius: 5%;
+    margin-left: 1100px;
+}
+
+#dossier-evolution {
+
+    height: 1250px;
+    background-color: #F1B63F;
+    position: relative;
+}
+
+#dossier-evolution h3{
+    background-color: aliceblue;
+    color: #F1B63F;
+    text-align: end;
+    font-family: "FuturaBold";
+    height: 50px;
+    border-top:#F1B63F solid 20px ;
+}
+
+#dossier-evolution h4{
+     text-align: center;
+    font-family: "FuturaBold";
+    color: aliceblue;
+   font-size: 22px;
+}
+
+.accroche p{
+    
+        padding: 23px;
+    width: 881px;
+    text-align: justify;
+
+    justify-self: center;
+    margin-top: 50px;
+    background-color: aliceblue;
+    border: solid #ad740a;
+
+}
+#dossier-evolution{
+    font-family: "Calibri";
+}
+
+#dossier-evolution:target h4 {
+    animation: glisseDroite 1s ease-out forwards;
+}
+.C1C2C3{
+       margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+        background-color: aliceblue;
+    width: fit-content;
+    justify-self: center;
+    padding: 20px;
+    border: solid 2px #ad740a;
+}
+.C1 {
+    width: 305px;
+    text-align: justify;
+
+}
+
+#dossier-evolution h5{
+    font-size: larger;
+    text-align: center;
+}
+
+.C2{
+      width: 277px;
+    text-align: justify;
+}
+
+.C3{
+       width: 295px;
+    text-align: justify;
+}
+
+.C3 img{
+    width: 130px;
+    margin-left: 79px;
+    margin-top: 39px;
+    border-radius: 5%;
+}
+.C3 h5{
+    color: #F1B63F;
+    font-family: "FuturaBold";
+    padding: 15px;
+}
+
+#dossier-epreuve{
+    height: 1350px;
+    background-color: aliceblue;
+    border-bottom: 30px solid #F1B63F ;
+}
+
+#dossier-epreuve p{
+    font-family: "Calibri";
+}
+#dossier-epreuve h4{
+      text-align: center;
+    font-family: "FuturaBold";
+    color: #F1B63F;
+}
+
+#dossier-epreuve h3 {
+    border-top: 10px solid aliceblue;
+    background-color: #F1B63F;
+    color: aliceblue;
+    text-align: end;
+    font-family: "FuturaBold";
+    height: 50px;
+}
+
+.accroche2{
+    margin-top: 20px;
+    font-size: larger;
+}
+.accroche2 h5{
+    font-size: large;
+    font-family: "Calibri";
+}
+
+.colonne1{
+width: 387px;
+    text-align: justify;
+    justify-self: center;
+}
+.colonne1 p{
+    font-size: larger;
+}
+
+.colonne2 img{
+    width:320px;
+   
+}
+
+.colonnes{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.colonne2 p{
+    text-align: justify;
+    width: 692px;
+    font-size: large;
+    margin-top: 20px;
+    
+}
+.colonne2 i{
+    font-family: "Calibri";
+    margin-top: 10px;
+}
+
+
 .wrapper{
   width: var(--page-w);
   display:flex;
@@ -47,14 +734,14 @@ body{
 
 /* ===== BANDEAUX ===== */
 .band{
-  height: var(--band-h);
+  height: 54px;
   background: var(--blue);
   color:#fff;
   font-weight:800;
   text-transform:uppercase;
   letter-spacing:.6px;
   font-size:18px;
-
+font-family: 'FuturaBold';
   display:flex;
   align-items:center;
   padding: 0 var(--pad-x);
@@ -141,6 +828,7 @@ body{
   font-weight:800;
   font-size:22px;
   padding-top: 10px;
+      font-family: 'FuturaBold';
 }
 
 /* ===== SPACERS ===== */
@@ -187,15 +875,62 @@ body{
   .subtitle{ font-size: 22px; }
   .spacer-xl{ height: 220px; }
 }
+:root{
+  --blue:#1d97c6;
+  --title:#1b8fbe;
+  --text:#1c1c1c;
+  --muted:#3f3f3f;}
 
-/* ===== PRINT (A4) ===== */
-@media print{
-  body{ background:#fff; padding:0; }
-  .wrapper{ gap:0; }
-  .page{
-    width: 210mm;
-    min-height: 297mm;
-    border:none;
-    page-break-after: always;
+
+  #organisation h1{
+    font-family: "FuturaBold";
+
   }
+ #organisation p{
+    font-family: "Calibri";
+  }
+   #organisation h3{
+    font-family: "Calibri";
+  }
+
+ .title {
+    margin-top: 100px;
+
+  }
+
+  #orga-mobilité img{
+        width: 123px;
+    margin-left: 355px;
+    border-radius: 5%;
+
+  }
+
+  #orga-innovation img{
+      width: 123px;
+    margin-left: 444px;
+    border-radius: 5%;
+  }
+  #orga-futur img{
+      width: 123px;
+    margin-left: 444px;
+    border-radius: 5%;
+    margin-top: 200px;
+  }
+
+  #orga-social h1{
+    margin-top: -10px;
+  }
+
+  .laureen {
+    width: 98px;
+    margin-left: 468px;
+    border-radius: 5%;
+  }
+
+  .poleSCS{    display: flex;
+    justify-content: center;
+    padding: 30px;}
+
+.poleSCS img{
+    width: 600px;
 }
