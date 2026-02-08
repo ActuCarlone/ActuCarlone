@@ -646,7 +646,7 @@ h4 {
 }
 
 #dossier-epreuve{
-    height: 1300px;
+    height: 1350px;
     background-color: aliceblue;
 }
 
@@ -670,9 +670,11 @@ h4 {
 
 .accroche2{
     margin-top: 20px;
+    font-size: larger;
 }
 .accroche2 h5{
     font-size: large;
+    font-family: "Calibri";
 }
 
 .colonne1{
@@ -686,6 +688,7 @@ width: 387px;
 
 .colonne2 img{
     width:320px;
+   
 }
 
 .colonnes{
@@ -693,4 +696,16 @@ width: 387px;
     gap: 20px;
     justify-content: center;
     margin-top: 50px;
+}
+
+.colonne2 p{
+    text-align: justify;
+    width: 692px;
+    font-size: large;
+    margin-top: 20px;
+    
+}
+.colonne2 i{
+    font-family: "Calibri";
+    margin-top: 10px;
 }
