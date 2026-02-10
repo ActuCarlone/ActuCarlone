@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "FuturaBold";
+    src: url("Futura_Bold.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.wrapper{
+  width: var(--page-w);
+  display:flex;
+  flex-direction:column;
+  gap: 24px;
+}
+
+/* ===== PAGE ===== */
+.page{
+  width: 100%;
+  min-height: var(--page-h);
+  background:#fff;
+  border: 1px solid #d9e2ea;
+  overflow:hidden;
+
+  /* IMPORTANT : plus de chevauchement (bandeaux dans le flux) */
+  display:flex;
+  flex-direction:column;
+}
+
+/* ===== BANDEAUX ===== */
+.band{
+  height: 54px;
+  background: var(--blue);
+  color:#fff;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.6px;
+  font-size:18px;
+font-family: 'FuturaBold';
+  display:flex;
+  align-items:center;
+  padding: 0 var(--pad-x);
+}
+.band--left{ justify-content:flex-start; }
+.band--right{ justify-content:flex-end; }
+
+.nav {
+    display: block;
+    position: relative;
+}
+
+.nav:hover .dropdown-content {
+    display: block;
+}
+.nav a{
+    text-decoration: none;
+}
+.nav .dropdown-content a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Calibri", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    border-radius: 0;
+    white-space: nowrap;
+}
+ .dropdown-content{
+display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1b8fbe;
+    min-width: 200px; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    }
+
+ .nav .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* ===== CONTENU ===== */
+.content{
+  padding: var(--pad-top) var(--pad-x);
+  flex:1; /* prend la hauteur dispo entre bandeaux */
+  display:flex;
+  flex-direction:column;
+}
+
+/* grands titres */
+.title{
+  text-align:center;
+  color: var(--title);
+  font-weight:800;
+  font-size: 40px;
+  line-height:1.1;
+  margin: 8px 0 10px;
+}
+.subtitle{
+  text-align:center;
+  color: var(--title);
+  font-weight:800;
+  font-size: 28px;
+  line-height:1.15;
+  margin: 0 0 24px;
+}
+
+/* paragraphes intro */
+.lead{
+  max-width: 900px;
+  margin: 0 auto 26px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--muted);
+  font-style: italic;
+  text-align: justify;
+}
+
+/* variante non-italique (page 3 deuxième intro) */
+.lead--plain{
+  font-style: italic; /* sur la capture c'est aussi en italique */
+  margin-top: -6px;
+}
+
+/* colonnes */
+.cols{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 46px;
+  align-items:start;
+  margin-top: 10px;
+}
+
+.col{
+  font-size: 13.5px;
+  line-height: 1.62;
+  color: var(--text);
+}
+.col p{
+  margin-bottom: 14px;
+  text-align: justify;
+}
+.h2{
+    font-family: "FuturaBold";
+}
+.h3{
+  text-align:center;
+  font-weight:800;
+  font-size:18px;
+  color:#111;
+  margin: 18px 0 10px;
+}
+.h3--lower{ margin-top: 22px; }
+
+/* signature en bas à droite (dans le flux, donc pas de chevauchement) */
+.signature{
+  margin-top:auto;
+  align-self:flex-end;
+  color: var(--title);
+  font-weight:800;
+  font-size:22px;
+  padding-top: 10px;
+      font-family: 'FuturaBold';
+}
+
+/* ===== SPACERS ===== */
+.spacer-xl{ height: 360px; } /* page 1 grande zone vide en haut */
+
+/* page 3 : colonnes un peu plus “haut” */
+.cols--tightTop{ margin-top: 14px; }
+
+/* page 4 : colonnes un peu plus “serrées” */
+.cols--p4{ margin-top: 8px; }
+
+/* ===== PHOTO SLOT (page 4) ===== */
+.photo-slot{
+  width: 100%;
+  height: 290px;
+  border: 2px solid #d9e2ea;
+  background: #f6f8fa;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin: 6px 0 18px;
+  overflow:hidden;
+}
+.photo-slot span{
+  color:#7a8a96;
+  font-weight:700;
+  letter-spacing:.6px;
+}
+.photo-slot img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1050px){
+  .wrapper{ width: 100%; }
+}
+@media (max-width: 820px){
+  :root{ --pad-x: 22px; }
+  .cols{ grid-template-columns: 1fr; gap: 26px; }
+  .title{ font-size: 32px; }
+  .subtitle{ font-size: 22px; }
+  .spacer-xl{ height: 220px; }
+}
+:root{
+  --blue:#1d97c6;
+  --title:#1b8fbe;
+  --text:#1c1c1c;
+  --muted:#3f3f3f;}
+
+
+ h1{
+    font-family: "FuturaBold";
+
+  }
+
+  h2{
+    font-family: "FuturaBold";
+  }
+  p{
+    font-family: "Calibri";
+  }
+ h3{
+    font-family: "Calibri";
+  }
+
+ .title {
+    margin-top: 100px;
+
+  }
+
+  #orga-mobilité img{
+        width: 123px;
+    margin-left: 355px;
+    border-radius: 5%;
+
+  }
+
+  #orga-innovation img{
+      width: 123px;
+    margin-left: 444px;
+    border-radius: 5%;
+  }
+  #orga-futur img{
+      width: 123px;
+    margin-left: 444px;
+    border-radius: 5%;
+    margin-top: 200px;
+  }
+
+  #orga-social h1{
+    margin-top: -10px;
+  }
+
+  .laureen {
+    width: 98px;
+    margin-left: 468px;
+    border-radius: 5%;
+  }
+
+  .poleSCS{    display: flex;
+    justify-content: center;
+    padding: 30px;}
+
+.poleSCS img{
+    width: 600px;
+}
