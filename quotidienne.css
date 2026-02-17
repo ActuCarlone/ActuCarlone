@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "FuturaBold";
+    src: url("Futura_Bold.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes glisseDroite {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#quotidienne-vie:target img {
+    animation: apparition 1s ease-out forwards;
+}
+
+body {
+    
+    position: relative;
+    background-color: aliceblue;
+    padding-top: 10px;
+    position: relative;
+}
+
+h3 {
+    font-family: "FuturaBold";
+    font-size: larger;
+    height: 50px;
+    background-color: aliceblue;
+    border-bottom: #7ad25a solid 5px;
+    border-top: #7ad25a solid 5px;
+    font-family: "FuturaBold";
+    color: #7ad25a;
+    text-align: end;
+}
+
+.nav {
+    display: block;
+    position: relative;
+}
+
+.nav:hover .dropdown-content {
+    display: block;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav .dropdown-content a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Calibri", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #7ad25a;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.nav .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+h5 {
+    color: #7ad25a;
+    text-align: end;
+    font-family: "FuturaBold";
+    font-size: larger;
+    padding-top: 50px;
+    margin-right: 58px;
+}
+
+h4 {
+    color: #7ad25a;
+    text-align: center;
+    font-family: "FuturaBold";
+    font-size: 30px;
+    padding-top: 50px;
+
+}
+
+h3 {
+    animation: glisseDroite 1s ease-out forwards;
+}
+
+h4 {
+    animation: glisseDroite 2s ease-out forwards;
+}
+
+p {
+    font-family: "calibri";
+}
+
+@keyframes apparition {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#quotidienne-vie p {
+    width: 797px;
+    text-align: justify;
+    margin-top: 40px;
+    justify-self: center;
+}
+
+.Faryal {
+    width: 121px;
+    position: absolute;
+    right: 0;
+    margin-right: 75px;
+    border-radius: 5%;
+}
+
+.calme {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    margin-top: 119px;
+}
+
+img {
+    animation: apparition 2s ease-out forwards;
+}
+
+#quotidienne-vie {
+    height: 969px;
+}
+
+#quotidienne-commerce{
+   height: 1200px;
+}
+
+#quotidienne-commerce ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-left: 20px;
+        justify-self: center;
+}
+
+#quotidienne-commerce ul li {
+    display: list-item;
+    margin-bottom: 10px;
+    font-family: "Calibri";
+}
+
+#quotidienne-commerce p{
+width: 632px;
+    margin-top: 46px;
+    justify-self: center;
+    text-align: justify;
+}
+
+.place{
+    width: 629px;
+
+    margin-top: 30px ;
+}
+
+
+.Alice{
+    border-radius: 5%;
+    position: absolute;
+    right: 0;
+    margin-top: -129px;
+    margin-right: 29px;
+
+}
+
+.maxime{
+border-radius: 5%;
+    right: 0;
+    position: absolute;
+    margin-right: 63px;
+       bottom: 0;
+    margin-bottom: 207px;
+    padding: 5px;
+    border: solid 3px #7ad25a;
+
+}
+
+#quotidienne-billet{
+    height: 1859px;
+    position: relative;
+}
+
+#quotidienne-billet h6{
+       text-align: center;
+    font-size: 20px;
+    font-family: "Calibri";
+}
+
+.fond{
+        background-color: #7ad25a;
+    color: aliceblue;
+    width: fit-content;
+    justify-self: center;
+    padding: 10px 50px;
+    border-radius: 5%;
+    margin-top: 20px;
+}
+
+#quotidienne-billet p{
+width: 632px;
+    margin-top: 46px;
+    justify-self: center;
+    text-align: justify;
+}
+
+.billet{
+    border: solid 3px #7ad25a;
+width: fit-content;
+justify-self: center;
+padding: 10px 50px;
+margin-top: 100px;
+}
+
+.logement{
+width: 244px;
+    position: absolute;
+    margin-top: 36px;}
+
+
+    #quotidienne-nature{
+        height: 1076px;
+
+    }
+    #quotidienne-nature p{
+        font-family: "Calibri";
+
+    }
+
+    #quotidienne-nature h6{
+        font-family:"Calibri" ;
+        font-weight: 700;
+    font-size: 17px;
+text-align: center;}
+
+
+#quotidienne-nature p{
+    text-align: justify;
+}
+
+.article{
+    width: 600px;
+margin-left: 100px;
+position: relative;
+}
+
+
+.nature{
+       width: 384px;
+    position: absolute;
+    right: 0;
+    margin-bottom: 257px;
+    bottom: 0;
+    margin-right: -443px;
+}
+
+.Pauline{
+    position: absolute;
+    right: 0;
+    margin-right: -515px;
+    bottom: 0;
+    
+    border-radius: 5%;
+
+}
+
+#quotidienne-transports{
+    height: 1300px;
+}
+
+
+#quotidienne-transports p{
+    width: 700px;
+    margin-top: 50px;
+    text-align: justify;
+    justify-self: center;
+    padding:20px;
+border-left: #7ad25a solid 2px;
+border-bottom: #7ad25a solid 2px;
+}
+
+.aeroport{
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 389px;
+}
+
+.alice{
+     border-radius: 5%;
+    position: absolute;
+    right: 0;
+    margin-top: 120px;
+    margin-right: 29px;
+
+}

@@ -164,6 +164,22 @@ h3 {
     animation: apparition 1s ease-out forwards;
 }
 
+#dossier:target img {
+    animation: apparition 1s ease-out forwards;
+}
+
+@keyframes apparition {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .breveV {
     display: flex;
     justify-content: space-evenly;
@@ -272,6 +288,8 @@ h3 {
 
 #dossier-origines p {
     font-family: "Calibri";
+    text-align: justify;
+
 }
 
 #dossier-origines h3 {
@@ -299,7 +317,7 @@ h3 {
     color: black;
     font-weight: 1000;
     font-family: "Calibri";
-    text-align: center;
+    
     font-size: 17px;
 }
 
@@ -336,7 +354,7 @@ h3 {
     border-top: #F1B63F 4px solid;
    width: 100px;
     height: 341px;
-       margin-top: -638px;
+       margin-top: -691px;
     margin-left: 968px;
 }
 
@@ -486,7 +504,7 @@ width: 387px;
 }
 
 
-.colonne2 img{
+.JP{
     width:320px;
    
 }
@@ -509,6 +527,14 @@ width: 387px;
     font-family: "Calibri";
     margin-top: 10px;
     
+}
+
+.marius{
+        width: 156px;
+    position: absolute;
+    right: 0;
+    margin-right: 129px;
+    border-radius: 5%;
 }
 
 .home a{
