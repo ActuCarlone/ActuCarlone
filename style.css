@@ -26,8 +26,9 @@ h2 {
     font-family: "FuturaBold";
     color: white;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 17px;
     font-size: 54px;
+    text-shadow: 4px 5px #0000006b;
 }
 
 
@@ -68,6 +69,43 @@ h1 {
 .h1 {
     display: flex;
     flex-direction: column;
+}
+
+
+.titles {
+    display: flex;
+justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 338px;
+}
+.titres {
+    display: flex;
+    flex-direction: column;
+    background: #1b91bfa8;
+    padding-bottom: 14px;
+    padding: 0 10px 10px;
+    border-radius: 5%;
+        
+}
+
+.titres h4{
+    text-shadow: 2px 3px #0000006b;
+}
+
+.titles p{
+    font-family: "Calibri";
+    color: aliceblue;
+    text-shadow: 0px 2px #00006b;
+}
+
+
+  
+.mois {
+        position: absolute;
+    margin-top: -216px;
+    margin-left: 30px;
+
 }
 
 .nav {

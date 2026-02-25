@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "FuturaBold";
+    src: url("Futura_Bold.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes glisseDroite {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#formation-experience:target img {
+    animation: apparition 1s ease-out forwards;
+}
+
+body {
+    
+    position: relative;
+    background-color: aliceblue;
+    padding-top: 10px;
+    
+}
+
+h3 {
+    font-family: "FuturaBold";
+    font-size: larger;
+    height: 50px;
+    background-color: aliceblue;
+    border-bottom: #ff6adc solid 5px;
+    border-top: #ff6adc solid 5px;
+    font-family: "FuturaBold";
+    color: #ff6adc;
+    text-align: end;
+}
+
+.nav {
+    display: block;
+    position: relative;
+}
+
+.nav:hover .dropdown-content {
+    display: block;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav .dropdown-content a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Calibri", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ff6adc;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.nav .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+h5 {
+    color: #ff6adc;
+    text-align: end;
+    font-family: "FuturaBold";
+    font-size: larger;
+    padding-top: 50px;
+    margin-right: 58px;
+}
+
+h4 {
+    color: #ff6adc;
+    text-align: center;
+    font-family: "FuturaBold";
+    font-size: 30px;
+    padding-top: 50px;
+
+}
+
+h3 {
+    animation: glisseDroite 1s ease-out forwards;
+}
+
+h4 {
+    animation: glisseDroite 2s ease-out forwards;
+}
+
+p {
+    font-family: "calibri";
+}
+
+@keyframes apparition {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+ h6{
+        font-family:"Calibri" ;
+        font-weight: 700;
+    font-size: 17px;
+text-align: center;}
+
+.skema{
+    width: 500px;
+    justify-self: center;
+        margin: auto;
+    margin-top: 20px;
+}
+.legende {
+    margin-left: 400px;
+}
+
+#formation-avenir {
+    height: 2671px;
+}
+#formation-avenir p{
+   
+    width: 800px;
+    text-align: justify;
+    justify-self: center;
+    border-left: #ff6ADC solid 3px;
+    padding: 20px;
+    border-right: #ff6ADC solid 3px;
+}
+
+.atman{
+    margin: auto;
+    display: block;
+}
+
+.lea{
+    width: 111px;
+    position: absolute;
+    right: 0;
+    margin-top: -189px;
+    margin-right: 55px;
+    border-radius: 5%;
+}
+
+img {
+    animation: apparition 2s ease-out forwards;
+}
+
+
+#formation-experience{
+    height: 2350px;
+}
+
+
+#formation-experience p{
+    justify-self: center;
+    text-align: justify;
+    width: 700px;
+}
+
+.elena{
+        width: 119px;
+    border-radius: 5%;
+    right: 0;
+    position: absolute;
+margin-right: 80px;
+}
+
+.chanelle{
+    width: 134px;
+    border-radius: 5%;
+    position: absolute;
+    right: 0;
+        margin-right: 351px;
+}
+
+
+.ligne {border-bottom: 3px solid #ff6ADC;
+    padding: 10px;}
+
+    .ITmaxime{
+        margin-top: 40px;
+    }
+
+
+.camille{
+    position: absolute;
+    width: 269px;
+
+}
+
+.maxime{
+        width: 264px;
+    position: absolute;
+right: 0;
+}
+
+#formation-donnees {
+    height: 1116px;
+}
+
+.themis {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    border-radius: 5%;
+  margin-top: 85px;
+    margin-right: 78px;
+}
+
+#formation-donnees p{
+        width: 900px;
+    justify-self: CENTER;
+    text-align: justify;
+
+}
+

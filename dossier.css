@@ -537,16 +537,3 @@ width: 387px;
     border-radius: 5%;
 }
 
-.home a{
-    text-decoration: none;
-    font-family: "FuturaBold";
-    font-size: larger;
-  border: 3px solid;
-    padding: 10px;
-}
-
-.home{
-    position: absolute;
-   display: flex;
-margin-top: 944px;
-}

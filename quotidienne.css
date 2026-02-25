@@ -31,7 +31,7 @@ body {
     position: relative;
     background-color: aliceblue;
     padding-top: 10px;
-    position: relative;
+    
 }
 
 h3 {
@@ -317,8 +317,10 @@ border-bottom: #7ad25a solid 2px;
 
 .aeroport{
     width: 500px;
+      display: block;
+    margin: auto;
     margin-top: 30px;
-    margin-left: 389px;
+
 }
 
 .alice{

@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "FuturaBold";
+    src: url("Futura_Bold.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes glisseDroite {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#formation-experience:target img {
+    animation: apparition 1s ease-out forwards;
+}
+
+body {
+
+    position: relative;
+    background-color: aliceblue;
+    padding-top: 10px;
+}
+
+h3 {
+    font-family: "FuturaBold";
+    font-size: larger;
+    height: 50px;
+    background-color: aliceblue;
+    border-bottom: #ff2f3b solid 5px;
+    border-top: #ff2f3b solid 5px;
+    font-family: "FuturaBold";
+    color: #ff2f3b;
+    text-align: end;
+}
+
+.nav {
+    display: block;
+    position: relative;
+}
+
+.nav:hover .dropdown-content {
+    display: block;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav .dropdown-content a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Calibri", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ff2f3b;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.nav .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+h5 {
+    color: #ff2f3b;
+    text-align: end;
+    font-family: "FuturaBold";
+    font-size: larger;
+    padding-top: 50px;
+    margin-right: 58px;
+}
+
+h4 {
+    color: #ff2f3b;
+    text-align: center;
+    font-family: "FuturaBold";
+    font-size: 30px;
+    padding-top: 50px;
+
+}
+
+h3 {
+    animation: glisseDroite 1s ease-out forwards;
+}
+
+h4 {
+    animation: glisseDroite 2s ease-out forwards;
+}
+
+p {
+    font-family: "calibri";
+}
+
+@keyframes apparition {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h6 {
+    font-family: "Calibri";
+    font-weight: 700;
+    font-size: 17px;
+    width: fit-content;
+    justify-self: center;
+}
+
+
+#sport-eau p {
+    width: 714px;
+    text-align: justify;
+    justify-self: center;
+}
+
+#sport-eau {
+       height: 1715px;
+
+}
+
+.line {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    margin-right: 83px;
+    border-radius: 5%;
+}
+
+
+.nautipolis {
+    display: block;
+    margin: auto;
+    border: #ff2f3b solid 2px;
+}
+
+.piscine {
+    width: 231px;
+    float: left;
+    margin-left: 21px;
+    margin-top: 45px;
+}
+
+.logovalbonne{
+    width: 100px;
+
+}
+
+#sport-societe{
+    height: 2574px;
+}
+
+#sport-societe p{
+    text-align: justify;
+    justify-self: center;
+    width: 800px;
+}
+
+.U11{
+    width: 428px;
+    display: block;
+    margin: auto;
+}
+
+.farise{
+  width: 90px;
+    position: absolute;
+    right: 0;
+    border-bottom: solid 2px #ff2f3B;
+    padding-bottom: 16px;
+    margin-right: 65px;
+    margin-top: 86px;
+}
+
+#sport-basket {
+    height: 1500px;
+}
+
+.basketball{
+    width: 513px;
+    display: block;
+    margin: auto;
+
+}
+
+.bloc{
+     
+    display: flex;
+    justify-self: center;
+    gap: 30px;
+    text-align: justify;
+
+}
+
+.bloc1{
+        width: 302px;
+    text-align: justify;
+
+}
+
+.bloc2{
+        width: 302px;
+    text-align: justify;
+
+}
+
+.bloc3{
+        width: 302px;
+    text-align: justify;
+
+
+}
+
+.magali{
+    width: 72px;
+    position: absolute;
+    right: 0;
+    margin-right: 101px;
+
+}
+
+#culture-musee{
+  height: 1953px;
+
+}
+
+#culture-musee p{
+    width: 700px;
+    text-align: justify;
+    justify-self: center;
+}
+
+.cassandre{
+    width: 116px;
+    position: absolute;
+    right: 0;
+    margin-right: 81px;
+    border-radius: 5%;
+
+
+}
+
+
+.streetart{
+    width: 500px;
+    margin: auto;
+    display: block;
+    border:#ff2f3B solid;
+}
+
