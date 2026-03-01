@@ -27,11 +27,11 @@
 }
 
 body {
-    
+
     position: relative;
     background-color: aliceblue;
     padding-top: 10px;
-    
+
 }
 
 h3 {
@@ -130,18 +130,21 @@ p {
     }
 }
 
- h6{
-        font-family:"Calibri" ;
-        font-weight: 700;
+h6 {
+    font-family: "Calibri";
+    font-weight: 700;
     font-size: 17px;
-text-align: center;}
-
-.skema{
-    width: 500px;
-    justify-self: center;
-        margin: auto;
-    margin-top: 20px;
+    text-align: center;
 }
+
+.skema {
+    width: 500px;
+
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+
 .legende {
     margin-left: 400px;
 }
@@ -149,8 +152,9 @@ text-align: center;}
 #formation-avenir {
     height: 2671px;
 }
-#formation-avenir p{
-   
+
+#formation-avenir p {
+
     width: 800px;
     text-align: justify;
     justify-self: center;
@@ -159,12 +163,12 @@ text-align: center;}
     border-right: #ff6ADC solid 3px;
 }
 
-.atman{
+.atman {
     margin: auto;
     display: block;
 }
 
-.lea{
+.lea {
     width: 111px;
     position: absolute;
     right: 0;
@@ -178,52 +182,54 @@ img {
 }
 
 
-#formation-experience{
+#formation-experience {
     height: 2350px;
 }
 
 
-#formation-experience p{
+#formation-experience p {
     justify-self: center;
     text-align: justify;
     width: 700px;
 }
 
-.elena{
-        width: 119px;
+.elena {
+    width: 119px;
     border-radius: 5%;
     right: 0;
     position: absolute;
-margin-right: 80px;
+    margin-right: 80px;
 }
 
-.chanelle{
+.chanelle {
     width: 134px;
     border-radius: 5%;
     position: absolute;
     right: 0;
-        margin-right: 351px;
+    margin-right: 351px;
 }
 
 
-.ligne {border-bottom: 3px solid #ff6ADC;
-    padding: 10px;}
+.ligne {
+    border-bottom: 3px solid #ff6ADC;
+    padding: 10px;
+}
 
-    .ITmaxime{
-        margin-top: 40px;
-    }
+.ITmaxime {
+    margin-top: 40px;
+}
 
 
-.camille{
+.camille {
     position: absolute;
     width: 269px;
 
 }
 
-.maxime{
-        width: 264px;
+.maxime {
+    width: 264px;
     position: absolute;
-right: 0;
+    right: 0;
 }
 
 #formation-donnees {
@@ -235,14 +241,13 @@ right: 0;
     position: absolute;
     right: 0;
     border-radius: 5%;
-  margin-top: 85px;
+    margin-top: 85px;
     margin-right: 78px;
 }
 
-#formation-donnees p{
-        width: 900px;
+#formation-donnees p {
+    width: 900px;
     justify-self: CENTER;
     text-align: justify;
 
 }
-

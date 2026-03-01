@@ -233,7 +233,7 @@ justify-content: center;
 
 }
 
-h4 {
+ h4 {
     font-family: "FuturaBold";
     color: white;
     display: flex;
@@ -298,5 +298,70 @@ h4 {
 }
 
 
+
+#eleves{
+    height: 3000px;
+  background-color: #1B91BF;
+}
+.coordination{
+    display: flex;
+    justify-self: center;
+    gap: 50px;
+    text-align: center;
+   padding-top: 80px;
+}
+.coordination img{
+    
+       width: 150px;
+    border-radius: 89%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid aliceblue;
+}
+
+#eleves h4{
+    justify-self: center;
+    font-size: 28px;
+    margin: 0;
+    padding: 23px;
+}
+
+#eleves h5{
+        justify-self: center;
+    font-size: 21px;
+    padding: 22px;
+    font-family: 'FuturaBold';
+    text-align: center;
+    color: aliceblue;
+    background-color: #04587a;
+    border: 2px solid aliceblue;
+    margin-top: 42px;
+}
+.coordination p{
+    font-family: "FuturaBold";
+    color: aliceblue;
+}
+.noms p{
+    display: inline-block;
+    gap: 10px;
+}
+.equipe img{
+    width: 100px;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+     object-fit: cover;
+    object-position: center;
+    height: 100px;
+}
+
+.equipe{
+          justify-self: center;
+    width: 986px;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
 
 
