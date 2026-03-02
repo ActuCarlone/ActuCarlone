@@ -1,0 +1,527 @@
+/* Reset simple */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: white;
+}
+
+/* ========================= */
+/* Bande violette du haut */
+/* ========================= */
+.top {
+  background: #2f3bff;
+  color: white;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 40px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* ========================= */
+/* Bloc photos */
+/* ========================= */
+.team {
+  background: #2f3bff;
+  margin: 40px 80px;     /* espace gauche/droite comme ta photo */
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.member {
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+/* ========================= */
+/* Contenu principal */
+/* ========================= */
+main {
+  margin: 0 80px 60px 80px;
+}
+
+/* Titre principal */
+h1 {
+  text-align: center;
+  color: #2f3bff;
+  font-size: 44px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+/* Intro */
+.intro {
+  margin-bottom: 40px;
+}
+
+.intro strong {
+  font-size: 18px;
+}
+
+.intro p {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Colonnes */
+.columns {
+  display: flex;
+  gap: 70px;
+}
+
+.columns div {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* ========================= */
+/* Bande violette du bas */
+/* ========================= */
+.bottom {
+  background: #2f3bff;
+  color: white;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-weight: 700;
+  font-size:  16px;
+  margin-bottom: 17px;
+}
+
+.footer-label {
+  font-size: 16px;   /* même taille que le haut */
+  font-weight: 700;
+  font-size: 13px !important;
+}
+
+.page-number {
+  font-size: 30px;   /* gros 33 */
+  font-weight: 900;
+}
+
+
+
+/* style.css */
+
+/* Base */
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#111;
+  background:#fff;
+}
+
+/* Bande haut */
+.top{
+  background:#2f3bff;
+  color:#fff;
+  height:36px;                 /* fine */
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;  /* "CRITIQUE" à gauche comme la photo */
+  padding:0 40px;
+  font-weight:800;
+  font-size:16px;
+  letter-spacing:.5px;
+}
+
+/* Zone centrale */
+main{
+  margin:0 80px;
+  padding:40px 0 30px;
+}
+
+/* Image + légende */
+.image-block{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:20px 0 60px;
+}
+
+.image-block img{
+  width:100%;
+  max-width:900px;     /* grande image centrée */
+  height:auto;
+  display:block;
+  border:1px solid #ddd;
+}
+
+.caption{
+  width:100%;
+  max-width:900px;
+  font-size:12px;
+  color:#444;
+  margin:10px 0 0;
+  font-style:italic;
+  text-align:left;
+}
+
+/* Colonnes texte */
+.columns{
+  display:flex;
+  gap:70px;
+  align-items:flex-start;
+}
+
+.columns > div{
+  flex:1;
+  font-size:14px;
+  line-height:1.75;
+}
+
+h2{
+  margin:0 0 18px;
+  font-size:20px;
+  font-weight:900;
+  text-align:left;
+}
+
+/* Signature à droite */
+.signature{
+  margin-top:160px;
+  text-align:right;
+  color:#2f3bff;
+  font-weight:900;
+  font-size:26px;
+}
+
+/* Bande bas */
+.bottom{
+  background:#2f3bff;
+  color:#fff;
+  height:36px;                 /* fine */
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 40px;
+  font-weight:800;
+  font-size:16px;
+  letter-spacing:.5px;
+}
+
+/* Numéro page plus gros comme sur l'image */
+.bottom span:last-child{
+  font-size:28px;
+  font-weight:900;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  main{ margin:0 20px; }
+  .columns{ flex-direction:column; gap:30px; }
+  .signature{ font-size:22px; }
+}
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+color:#111;
+background:#fff;
+}
+
+/* Bande haut */
+.top{
+background:#2f3bff;
+color:#fff;
+height:38px;
+display:flex;
+align-items:center;
+justify-content:flex-end;
+padding:0 40px;
+font-weight:800;
+font-size:14px;
+}
+
+/* Zone principale */
+main{
+margin:0 90px;
+padding:40px 0;
+}
+
+/* Titre */
+h1{
+color:#2f3bff;
+font-size:44px;
+font-weight:900;
+text-align:center;
+margin-bottom:30px;
+}
+
+/* Intro */
+.intro{
+font-size:16px;
+line-height:1.6;
+margin-bottom:50px;
+}
+
+/* Section image + texte */
+.top-section{
+display:flex;
+gap:60px;
+align-items:flex-start;
+margin-bottom:50px;
+}
+
+.left-text{
+flex:1;
+font-size:15px;
+line-height:1.7;
+}
+
+.right-image{
+width:380px;
+}
+
+.right-image img{
+width:100%;
+height:auto;
+display:block;
+}
+
+.caption{
+font-size:12px;
+margin-top:6px;
+font-style:italic;
+}
+
+/* Colonnes */
+.columns{
+display:flex;
+gap:70px;
+}
+
+.columns > div{
+flex:1;
+font-size:14px;
+line-height:1.75;
+}
+
+h2{
+font-size:18px;
+font-weight:900;
+margin:30px 0 15px;
+}
+
+.signature{
+color:#2f3bff;
+font-weight:900;
+font-size:26px;
+text-align:right;
+margin-top:30px;
+}
+
+/* Bande bas */
+.bottom{
+background:#2f3bff;
+color:#fff;
+height:38px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 40px;
+font-weight:800;
+font-size:14px;
+}
+
+.footer-label {
+  font-size: 16px;   /* même taille que le haut */
+  font-weight: 700;
+  font-size: 16px !important;
+}
+
+
+.page-number{
+font-size:30px;
+font-weight:900;
+}
+
+/* Base */
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#ffffff;
+  color:#111;
+}
+
+/* ========================= */
+/* Bande violette haut */
+/* ========================= */
+.topbar{
+  background:#2f3bff;
+  height:38px;
+  display:flex;
+  align-items:center;
+  padding:0 45px;
+}
+
+.topbar-text{
+  color:white;
+  font-weight:800;
+  font-size:14px;
+  letter-spacing:.5px;
+}
+
+/* ========================= */
+/* Zone centrale */
+/* ========================= */
+.wrap{
+  margin:0 95px;
+  padding:55px 0 45px;
+}
+
+/* ========================= */
+/* Titre principal */
+/* ========================= */
+.title{
+  text-align:center;
+  color:#2f3bff;
+  font-size:46px;
+  font-weight:900;
+  margin:0 0 25px;
+  line-height:1.2;
+}
+
+/* Intro */
+.lead{
+  max-width:1000px;
+  margin:0 auto 45px;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* ========================= */
+/* Colonnes principales */
+/* ========================= */
+.grid{
+  display:flex;
+  gap:75px;
+  align-items:flex-start;
+}
+
+/* ========================= */
+/* Colonne gauche */
+/* ========================= */
+.left{
+  flex:1.15;
+  font-size:13.5px;
+  line-height:1.75;
+}
+
+.left p{
+  margin:0 0 15px;
+}
+
+.quote{
+  font-size:18px;
+  font-weight:900;
+  margin:0 0 12px;
+}
+
+/* ========================= */
+/* Colonne droite */
+/* ========================= */
+.right{
+  flex:0.95;
+  font-size:13.5px;
+  line-height:1.75;
+}
+
+.right p{
+  margin:0 0 15px;
+}
+
+/* Couverture livre */
+.cover{
+  display:flex;
+  justify-content:center;
+  margin-bottom:18px;
+}
+
+.cover img{
+  width:100%;
+  max-width:420px;
+  height:auto;
+  display:block;
+}
+
+/* Notre avis */
+.rating{
+  font-size:16px;
+  font-weight:900;
+  margin:0 0 15px;
+}
+
+/* Référence */
+.ref{
+  margin-top:18px;
+  font-size:13px;
+}
+
+/* Signature */
+.author{
+  text-align:right;
+  color:#2f3bff;
+  font-weight:900;
+  font-size:26px;
+  margin-top:22px;
+}
+
+/* ========================= */
+/* Bande violette bas */
+/* ========================= */
+.bottombar{
+  background:#2f3bff;
+  height:38px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 45px;
+}
+
+.bottom-left{
+  color:white;
+  font-weight:800;
+  font-size:14px;
+}
+
+.bottom-right{
+  color:white;
+  font-weight:900;
+  font-size:30px;
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+@media (max-width: 1000px){
+  .wrap{ margin:0 30px; }
+  .grid{ flex-direction:column; gap:40px; }
+  .author{ font-size:22px; }
+}
