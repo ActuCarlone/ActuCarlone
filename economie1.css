@@ -8,15 +8,23 @@ html,body{ height:100%; }
 body{
   margin:0;
   background:#ffffff;
-  font-family:"Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text);
 }
+
 .page{
   width:100%;
   margin:0;
   background:#fff;
   border:none;
 }
+
+@font-face {
+    font-family: "FuturaBold";
+    src: url("Futura_Bold.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* TOP + BOTTOM BARS */
 .bar{
   height:36px;
