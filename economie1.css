@@ -25,6 +25,46 @@ body{
     font-style: normal;
 }
 
+.nav {
+    display: block;
+    position: relative;
+}
+
+.nav:hover .dropdown-content {
+    display: block;
+}
+.nav a{
+    text-decoration: none;
+}
+.nav .dropdown-content a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Calibri", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    border-radius: 0;
+    white-space: nowrap;
+}
+ .dropdown-content{
+display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #7a3cf0;
+    min-width: 200px; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    }
+ 
+ .nav .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
 /* TOP + BOTTOM BARS */
 .bar{
   height:36px;
