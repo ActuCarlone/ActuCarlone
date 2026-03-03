@@ -28,7 +28,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   margin-top: 10px;
-  font-family: "FuturaBold"
+  font-family: "FuturaBold";
 }
 
 .nav {
@@ -110,6 +110,7 @@ h1 {
   font-size: 44px;
   font-weight: 900;
   margin-bottom: 40px;
+  font-family: "FuturaBold";
 }
 
 /* Intro */
@@ -143,6 +144,7 @@ h3 {
   font-weight: 800;
   margin-bottom: 15px;
   font-size: 18px;
+  font-family: "FuturalBold";
 }
 
 /* ========================= */
@@ -175,29 +177,7 @@ h3 {
 
 
 
-/* style.css */
 
-/* Base */
-body{
-  margin:0;
-  font-family: Arial, Helvetica, sans-serif;
-  color:#111;
-  background:#fff;
-}
-
-/* Bande haut */
-.top{
-  background:#2f3bff;
-  color:#fff;
-  height:36px;                 /* fine */
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;  /* "CRITIQUE" à gauche comme la photo */
-  padding:0 40px;
-  font-weight:800;
-  font-size:16px;
-  letter-spacing:.5px;
-}
 
 /* Zone centrale */
 main{
@@ -249,6 +229,7 @@ h2{
   font-size:20px;
   font-weight:900;
   text-align:left;
+  font-family: "FuturaBold";
 }
 
 /* Signature à droite */
@@ -258,6 +239,7 @@ h2{
   color:#2f3bff;
   font-weight:900;
   font-size:26px;
+  font-family: "FuturaBold";
 }
 
 /* Bande bas */
@@ -288,8 +270,7 @@ h2{
 }
 
 body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
+
 color:#111;
 background:#fff;
 }
