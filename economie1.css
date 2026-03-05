@@ -74,7 +74,8 @@ display: none;
   padding:0 22px;
   color:#fff;
 }
-
+ .bar-content{
+  font-family: "FuturaBold"}
 .bar--top{
   justify-content:flex-end;
   margin-top: 13px;
