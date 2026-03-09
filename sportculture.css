@@ -278,3 +278,208 @@ h6 {
     border:#ff2f3B solid;
 }
 
+@media (max-width: 1024px) {
+
+    #sport-eau p {
+        width: 90%;
+    }
+
+    #sport-societe p {
+        width: 90%;
+    }
+
+    #culture-musee p {
+        width: 90%;
+    }
+
+    .nautipolis {
+        width: 90%;
+        height: auto;
+    }
+
+    .basketball {
+        width: 80%;
+        height: auto;
+    }
+
+    .streetart {
+        width: 80%;
+        height: auto;
+    }
+
+    .U11 {
+        width: 80%;
+        height: auto;
+    }
+
+    .bloc {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .bloc1,
+    .bloc2,
+    .bloc3 {
+        width: 45%;
+    }
+
+    #sport-eau,
+    #sport-societe,
+    #sport-basket,
+    #culture-musee {
+        height: auto;
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    h4 {
+        font-size: 20px;
+        padding: 30px 15px 10px;
+    }
+
+    h5 {
+        margin-right: 20px;
+        font-size: medium;
+        padding-top: 30px;
+    }
+
+    h6 {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    p {
+        padding: 0 15px;
+    }
+
+    #sport-eau p,
+    #sport-societe p,
+    #culture-musee p {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    
+    .nautipolis,
+    .basketball,
+    .streetart {
+        width: 95%;
+        height: auto;
+    }
+
+    .U11 {
+        width: 95%;
+        height: auto;
+    }
+
+    
+    .piscine {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+
+    .logovalbonne {
+        width: 70px;
+    }
+
+
+    .bloc {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .bloc1,
+    .bloc2,
+    .bloc3 {
+        width: 100%;
+    }
+
+
+    .line,
+    .farise,
+    .magali,
+    .cassandre {
+        position: static;
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    .line {
+        width: 80px;
+    }
+
+    .farise {
+        width: 70px;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .magali {
+        width: 60px;
+    }
+
+    .cassandre {
+        width: 90px;
+    }
+
+   
+    #sport-eau,
+    #sport-societe,
+    #sport-basket,
+    #culture-musee {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .dropdown-content {
+        min-width: 160px;
+        right: 0;
+    }
+
+    .nav .dropdown-content a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+/* Très petit mobile (max 480px) */
+@media (max-width: 480px) {
+
+    h4 {
+        font-size: 17px;
+        padding: 20px 10px 10px;
+    }
+
+    h3 {
+        font-size: medium;
+        height: 45px;
+        line-height: 35px;
+        padding-right: 10px;
+    }
+
+    .piscine {
+        width: 90%;
+    }
+
+    .nautipolis,
+    .basketball,
+    .streetart,
+    .U11 {
+        width: 100%;
+    }
+
+    h5 {
+        margin-right: 10px;
+    }
+}
+
