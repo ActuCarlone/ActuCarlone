@@ -332,3 +332,200 @@ border-bottom: #7ad25a solid 2px;
 
 }
 
+
+@media (max-width: 1024px) {
+
+    #quotidienne-vie p,
+    #quotidienne-commerce p,
+    #quotidienne-billet p,
+    #quotidienne-transports p {
+        width: 90%;
+    }
+
+    .place {
+        width: 90%;
+    }
+
+    .aeroport {
+        width: 80%;
+        height: auto;
+    }
+
+    .article {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nature,
+    .Pauline {
+        position: static;
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        height: auto;
+    }
+
+    #quotidienne-vie,
+    #quotidienne-commerce,
+    #quotidienne-billet,
+    #quotidienne-nature,
+    #quotidienne-transports {
+        height: auto;
+        padding-bottom: 80px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    h4 {
+        font-size: 20px;
+        padding: 30px 15px 10px;
+    }
+
+    h5 {
+        margin-right: 20px;
+        font-size: medium;
+        padding-top: 30px;
+    }
+
+    p {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    #quotidienne-vie p,
+    #quotidienne-commerce p,
+    #quotidienne-billet p,
+    #quotidienne-transports p {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .calme {
+        position: static;
+        display: block;
+        margin: 20px auto;
+        width: 140px;
+    }
+
+    .Faryal,
+    .Alice,
+    .alice,
+    .maxime {
+        position: static;
+        display: block;
+        margin: 10px auto;
+        width: 90px;
+    }
+
+    .maxime {
+        padding: 5px;
+    }
+
+    .logement {
+        position: static;
+        display: block;
+        margin: 20px auto;
+        width: 180px;
+    }
+
+    .place {
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+
+    .aeroport {
+        width: 95%;
+    }
+
+    .article {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .nature {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .Pauline {
+        position: static;
+        display: block;
+        width: 80px;
+        margin: 10px auto;
+    }
+
+    .billet {
+        padding: 10px 20px;
+        margin-top: 50px;
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .fond {
+        padding: 10px 20px;
+        width: 90%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        min-width: 160px;
+    }
+
+    .nav .dropdown-content a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    #quotidienne-vie,
+    #quotidienne-commerce,
+    #quotidienne-billet,
+    #quotidienne-nature,
+    #quotidienne-transports {
+        height: auto;
+        padding-bottom: 60px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    h4 {
+        font-size: 17px;
+        padding: 20px 10px 10px;
+    }
+
+    h3 {
+        font-size: medium;
+        height: 45px;
+        line-height: 35px;
+        padding-right: 10px;
+    }
+
+    h5 {
+        margin-right: 10px;
+    }
+
+    .aeroport,
+    .place {
+        width: 100%;
+    }
+
+    .billet {
+        padding: 8px 12px;
+    }
+
+    #quotidienne-commerce ul {
+        padding-left: 25px;
+        margin-left: 10px;
+    }
+}
