@@ -366,15 +366,7 @@ border-bottom: #7ad25a solid 2px;
         height: auto;
     }
 
-    #quotidienne-vie,
-    #quotidienne-commerce,
-    #quotidienne-billet,
-    #quotidienne-nature,
-    #quotidienne-transports {
-        height: auto;
-        padding-bottom: 80px;
-    }
-}
+    
 
 
 @media (max-width: 768px) {
@@ -529,3 +521,4 @@ border-bottom: #7ad25a solid 2px;
         margin-left: 10px;
     }
 }
+
