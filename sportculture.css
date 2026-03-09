@@ -433,12 +433,10 @@ h6 {
     }
 
    
-    #sport-eau,
-    #sport-societe,
-    #sport-basket,
-    #culture-musee {
-        height: auto;
-        padding-bottom: 60px;
+    #sport-eau {height: 2000px;}
+    #sport-societe {height: 2700px;}
+    #sport-basket {height: 2000px;}
+    #culture-musee {height : auto;
     }
 
     .dropdown-content {
@@ -452,7 +450,6 @@ h6 {
     }
 }
 
-/* Très petit mobile (max 480px) */
 @media (max-width: 480px) {
 
     h4 {
@@ -482,4 +479,5 @@ h6 {
         margin-right: 10px;
     }
 }
+
 
