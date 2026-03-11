@@ -1,3 +1,4 @@
+
 :root{
   --purple:#7a3cf0;
   --text:#111;
@@ -530,7 +531,9 @@ p{
   margin-bottom:15px;
 }
 
-/* RESPONSIVE */
+#innovations{
+  margin-top: 100px;
+}
 @media(max-width:1000px){
   .two-cols{
     flex-direction:column;
